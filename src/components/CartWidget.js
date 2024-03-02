@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CartWidget = () => {
-  const itemCount = 5; // Puedes ajustar este número según tus necesidades
+  const itemCount = 5; 
 
   return (
     <div className="cart-widget" style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>

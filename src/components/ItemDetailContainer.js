@@ -6,7 +6,7 @@ const ItemDetailContainer = ({ match }) => {
   const [product, setProduct] = useState(null);
 
   useEffect(() => {
-    // Obtener detalles del producto desde el servicio de datos
+
     const fetchData = async () => {
       const productData = await dataService.getProductById(match.params.id);
       setProduct(productData);

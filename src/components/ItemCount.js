@@ -17,7 +17,6 @@ const ItemCount = ({ stock, initial, onAdd }) => {
 
   const addToCart = () => {
     onAdd(quantity);
-    // Puedes agregar más lógica aquí, como actualizar el carrito de compras
   };
 
   return (

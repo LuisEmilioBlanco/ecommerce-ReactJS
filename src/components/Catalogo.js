@@ -63,8 +63,7 @@ const Catalogo = () => {
       imagen: 'https://firebasestorage.googleapis.com/v0/b/sio-odontologia.appspot.com/o/algodon.jpg?alt=media',
       categoria: 'Otros',
     },
-    // ... (otros productos)
-], []);  // La dependencia es un array vacío porque no tiene dependencias externas
+], []);
 
 const productosPorCategoria = categorias.reduce((acc, categoria) => {
   acc[categoria] = categoria === 'Todos' ?
@@ -74,7 +73,6 @@ const productosPorCategoria = categorias.reduce((acc, categoria) => {
 }, {});
 
 useEffect(() => {
-  // Simulo la obtención de productos (puedes ajustar esto según cómo obtienes tus datos)
   console.log('Productos actualizados:', productos);
 }, [productos]);
 
