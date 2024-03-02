@@ -1,31 +1,31 @@
 import React from 'react';
 
 const CartWidget = () => {
-  const itemCount = 5; 
+const itemCount = 5; 
 
-  return (
+return (
     <div className="cart-widget" style={{ display: 'flex', alignItems: 'center', cursor: 'pointer' }}>
-      <span
+    <span
         className="cart-icon"
         role="img"
         aria-label="Cart"
         style={{ fontSize: '24px', marginRight: '8px' }}
-      >
+    >
         🛒
-      </span>
-      <span
+    </span>
+    <span
         className="item-count"
         style={{
-          backgroundColor: '#3498db',
-          color: 'white',
-          borderRadius: '50%',
-          padding: '6px 10px',
+        backgroundColor: '#3498db',
+        color: 'white',
+        borderRadius: '50%',
+        padding: '6px 10px',
         }}
-      >
+    >
         {itemCount}
-      </span>
+    </span>
     </div>
-  );
+);
 };
 
 export default CartWidget;
