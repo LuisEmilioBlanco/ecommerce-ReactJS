@@ -1,19 +1,19 @@
 import React from 'react';
 import ItemListContainer from './ItemListContainer';
 
-const Category = ({ params }) => {
-if (!params) {
-return <div>Error: Categoría no encontrada</div>;
-}
+const Category = ({ match }) => {
+  const { categoryId } = match.params;
 
-const { categoryId } = params;
+  if (!categoryId) {
+    return <div>Error: Categoría no encontrada</div>;
+  }
 
-return (
+  return (
     <div>
-    <h2>Productos de la categoría: {categoryId}</h2>
-    <ItemListContainer greeting={`Productos de la categoría: ${categoryId}`} />
+      <h2>Productos de la categoría: {categoryId}</h2>
+      <ItemListContainer categoryId={categoryId} />
     </div>
-);
+  );
 };
 
 export default Category;
